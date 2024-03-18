@@ -1,8 +1,16 @@
 import React from 'react'
+import groupvideo from '../public/groupvideo.png'
+import Image from 'next/image'
 
 const ViewVideo = () => {
   return (
-    <section className='gradient-border h-[400px] w-[400px]'></section>
+        <Image
+        className='max-container gradient-border relative'
+        src={groupvideo}
+        alt="Group Video"
+        height={500}
+        width={700}
+        />
   )
 }
 
