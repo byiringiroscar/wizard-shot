@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link href='/'>Login</Link>
           <div className='flex relative'>
             <p
-              className='text-[#090337] w-full absolute -top-10 right-0  text-sm font-bold py-3 px-6 rounded-lg cursor-pointer'
+              className='text-[#090337] text-base script-font w-full  absolute -top-10 right-0 font-bold py-3 px-6 rounded-lg cursor-pointer'
             >100% free, forever 🤑</p>
             <button className='flex gap-2 bg-[#18181C] font-bold py-3 px-6 rounded-lg  items-center'>
               <Image src={chrome} height={19} width={19} alt="logo" />
