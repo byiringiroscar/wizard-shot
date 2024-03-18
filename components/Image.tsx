@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 
 interface ImageInterface {
-    src: string;
+    src: any;
     alt: string;
     width?: number;
     priority?: boolean;

@@ -3,12 +3,20 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../public/logo.png'
 import { NAV_LINKS } from '@/constants' 
+import ImageUse from './Image'
 
 const Navbar = () => {
   return (
     <nav className='flex justify-between padding-container  py-5 absolute inset-x-0 top-0 z-50'>
         <Link href='/'>
-            <Image alt="logo" src={logo} width={180} height={60} />
+            <ImageUse
+              src={logo}
+              width={140}
+              priority
+              height={24.81}
+              alt="logo"
+              className="h-[18px] w-auto"
+            />
         </Link>
         <ul className='hidden h-full gap-12 lg:flex'>
             {NAV_LINKS.map((link) => (

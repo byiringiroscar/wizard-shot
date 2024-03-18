@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,6 +39,28 @@
   
     .padding-container {
       @apply px-6 lg:px-20 3xl:px-0;
+    }
+
+    .mulish-font {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 700;
+    }
+
+    .jakarta-font {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+    }
+
+    .opensans-font {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
+
+    .gradient-border {
+      border-width: 6px;
+      border-style: solid;
+      border-image: linear-gradient(to bottom, #AB96F8, #FF99D0) 1;
+      border-radius: 12px;
     }
   }
   

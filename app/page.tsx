@@ -1,4 +1,5 @@
 import MainSec from "@/components/MainSec";
+import ViewVideo from "@/components/ViewVideo";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           />
         </div>
         <MainSec />
+        <ViewVideo />
       </div>
     </div>
   );
