@@ -15,6 +15,23 @@
   } */
   
   @layer utilities {
+    /* .bg-gradient {
+      border: 10px solid;
+      background: linear-gradient(180deg, #ab96f8 0%, #ff99d0 100%);
+      border-radius: 10px;
+    }
+  
+    .bg-free-gradient {
+      background: linear-gradient(
+        90deg,
+        #f0fbb9 0%,
+        #fbb3a0 29.01%,
+        #bfa2fd 53.16%,
+        #a4d0fc 74.87%,
+        #9fe9e2 87.59%,
+        #9fface 100%
+      );
+    } */
     .max-container {
       @apply mx-auto max-w-[1440px];
     }
