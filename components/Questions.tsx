@@ -11,7 +11,7 @@ const Questions = () => {
             <MyDisclosure />
             <MyDisclosure />
         </div>
-        <div className='flex justify-between w-full items-center'>
+        <div className='flex flex-col lg:flex-row gap-3 lg:justify-between w-full items-center'>
             <p className='text-[14px] leading-[19px] text-[#000000] mulish-font'>Curious To  Know More?</p>
             <button className='bg-[#03132E] mulish-font text-[14px] leading-[22px] text-white rounded-md px-6 py-2'>Vist Help & Community Center</button>
         </div>
