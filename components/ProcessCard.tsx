@@ -13,8 +13,9 @@ const ProcessCard = ({step, image, title, description}: ProcessInterface) => {
     <div className='flex flex-col gap-3'>
         <Image src={image}
         alt='img'
-        height={100}
-        width={100}
+        height={230}
+        width={295}
+        priority
         className='w-auto h-[230px]'
             />
         <div className='flex flex-col gap-1'>
