@@ -41,6 +41,16 @@
                   0px 18px 48px rgba(159, 250, 206, 0.6);
     }
     
+    .box-shadow-custom {
+      background-color: inherit;
+      box-shadow: 0px 4px 6px rgba(68, 255, 154, 0.2),
+                  0px 6px 15px rgba(68, 176, 255, 0.3),
+                  0px 9px 24px rgba(139, 68, 255, 0.4),
+                  0px 12px 32px rgba(255, 102, 68, 0.5),
+                  0px 15px 40px rgba(235, 255, 112, 0.5);
+      
+    }
+
     .max-container {
       @apply mx-auto max-w-[1440px];
     }
@@ -57,6 +67,16 @@
     .mulish-font {
       font-family: 'Mulish', sans-serif;
       font-weight: 700;
+    }
+
+    .mulish-font-500 {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 500;
+    }
+
+    .mulish-font-400 {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 400;
     }
 
     .jakarta-font {
