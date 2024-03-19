@@ -9,7 +9,7 @@ import { FiAlignJustify } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between padding-container  pt-12 absolute inset-x-0 top-0 z-50'>
+    <nav className='flex justify-between padding-container items-center  pt-12 absolute inset-x-0 top-0 z-50'>
         <Link href='/'>
             <ImageUse
               src={logo}
@@ -20,12 +20,12 @@ const Navbar = () => {
               className="h-[18px] w-auto"
             />
         </Link>
-        <ul className='hidden h-full gap-12 lg:flex'>
+        <ul className='hidden h-full sm:gap-5 gap-10 lg:flex'>
             {NAV_LINKS.map((link) => (
                 <Link href={link.href} key={link.key} className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>{link.label}</Link>
             ))}
         </ul>
-        <div className='hidden lg:flex gap-3.5 items-start'>
+        <div className='hidden lg:flex gap-3.5 items-center'>
           <Link href='/' className='text-[#00000099] text-base font-bold opensans-font-regular '>Login</Link>
           <div className='flex relative'>
             <p
