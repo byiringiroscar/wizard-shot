@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ViewVideo = () => {
   return (
         <Image
-        className='max-container gradient-border relative'
+        className='max-container gradient-border relative h-full w-full'
         src={groupvideo}
         alt="Group Video"
         height={500}
