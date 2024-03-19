@@ -62,7 +62,7 @@
     .gradient-border {
       border-style: solid;
       border-image: linear-gradient(to bottom, #AB96F8, #FF99D0) 1;
-      border-radius: 12px;
+      border-radius: 10px;
     }
   }
   
