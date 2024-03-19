@@ -38,6 +38,7 @@
     .padding-container {
       @apply px-6 lg:px-20 3xl:px-0;
     }
+    
 
     .mulish-font {
       font-family: 'Mulish', sans-serif;
