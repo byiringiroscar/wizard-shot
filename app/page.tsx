@@ -3,6 +3,7 @@ import ViewVideo from "@/components/ViewVideo";
 import Image from "next/image";
 import Process from "@/components/Process";
 import Features from "@/components/Features";
+import Questions from "@/components/Questions";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <ViewVideo />
         <Process />
         <Features />
+        <Questions />
       </div>
     </div>
   );
