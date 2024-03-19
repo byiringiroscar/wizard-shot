@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
         <ul className='hidden h-full gap-12 lg:flex'>
             {NAV_LINKS.map((link) => (
-                <Link href={link.href} key={link.key} className='text-[#090337] transition-all px-2 py-0.5 cursor-pointer rounded font-medium'>{link.label}</Link>
+                <Link href={link.href} key={link.key} className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>{link.label}</Link>
             ))}
         </ul>
         <div className='flex gap-3.5 items-center'>
