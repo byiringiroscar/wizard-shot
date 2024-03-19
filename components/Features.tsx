@@ -27,12 +27,12 @@ const Features = () => {
 
         </div>
 
-        <div className='flex flex-col gap-6 border-4 border-solid border-[black] py-5 px-2 w-full rounded-lg'>
-                <h3 className='jakarta-font text-[32px] text-center leading-[35px]'>Create A Detailed Tutorial in Less than 3 clicks</h3>
+        <div className='flex flex-col gap-6 border-4 border-solid border-[black] py-5 px-2 rounded-lg items-center'>
+                <h3 className='jakarta-font text-[32px] text-center leading-[35px] lg:w-3/4'>Create A Detailed Tutorial in Less than 3 clicks</h3>
                 <button className='flex gap-2 bg-[#18181C] font-bold py-3 px-6 rounded-lg  items-center justify-center'>
-              <Image src={chrome} height={19} width={19} alt="logo" />
-              <span className='text-white mulish-font text-sm'>Install Wizardshot</span>
-              </button>
+                      <Image src={chrome} height={19} width={19} alt="logo" />
+                      <span className='text-white mulish-font text-sm'>Install Wizardshot</span>
+                </button>
               <div className='flex flex-col items-center gap-1'>
                 <blockquote className='jakarta-font text-[14px] text-center leading-[16px]'>Has helped us write help docs 100x faster</blockquote>
                 <span className='jakarta-font-400 text-[14px] text-center leading-[16px]'>– Dany River, Cartier Informatie</span>
