@@ -2,6 +2,7 @@ import MainSec from "@/components/MainSec";
 import ViewVideo from "@/components/ViewVideo";
 import Image from "next/image";
 import Process from "@/components/Process";
+import Features from "@/components/Features";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <MainSec />
         <ViewVideo />
         <Process />
+        <Features />
       </div>
     </div>
   );

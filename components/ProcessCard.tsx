@@ -15,7 +15,7 @@ const ProcessCard = ({step, image, title, description}: ProcessInterface) => {
         alt='img'
         height={100}
         width={100}
-        className='w-full h-[230px]'
+        className='w-auto h-[230px]'
             />
         <div className='flex flex-col gap-1'>
             <h3 className='text-[18px] leading-[25px] font-bold opensans-font text-[#363636]'>{step}. {title}</h3>
