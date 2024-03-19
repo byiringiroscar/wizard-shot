@@ -5,6 +5,7 @@ import logo from '../public/logo.png'
 import chrome from '../public/chrome.png'
 import { NAV_LINKS } from '@/constants' 
 import ImageUse from './Image'
+import { FiAlignJustify } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -24,7 +25,7 @@ const Navbar = () => {
                 <Link href={link.href} key={link.key} className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>{link.label}</Link>
             ))}
         </ul>
-        <div className='flex gap-3.5 items-start'>
+        <div className='hidden lg:flex gap-3.5 items-start'>
           <Link href='/' className='text-[#00000099] text-base font-bold opensans-font-regular '>Login</Link>
           <div className='flex relative'>
             <p
@@ -35,6 +36,9 @@ const Navbar = () => {
               <span className='text-white mulish-font text-sm'>Install Wizardshot</span>
               </button>
           </div>
+        </div>
+        <div className='lg:hidden'>
+          <FiAlignJustify className='text-3xl text-[#00000099]' />
         </div>
     </nav>
   )
