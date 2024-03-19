@@ -37,3 +37,23 @@ export const featuresData = [
         child2: "Integrations",
       },
 ]
+
+
+export const questionsData = [
+    {
+        question: "What is Wizardshot?",
+        answer: "Wizardshot is a web app & chrome extension that allows you to create step-by-step tutorials simply by capturing your screen."
+    },
+    {
+        question: "How is Wizardshot Free?",
+        answer: "The costs to run a service is really inexpensive as most of the processing happens in the Chrome extension. Really - all that we have to pay for is super-secure hosting, awesome 24/7 support and that's it"
+    },
+    {
+        question: "Is my data secure?",
+        answer: "Yes! Send us a message and we’ll process your request no questions asked."
+    },
+    {
+        question: "How do I get started?",
+        answer: "To get started, create an account, and follow the instructions to start creating your first tutorial."
+    },
+]
