@@ -29,7 +29,7 @@ const Features = () => {
 
         <div className='flex flex-col gap-6 border-4 border-solid border-[black] py-5 px-2 rounded-lg items-center'>
                 <h3 className='jakarta-font text-[32px] text-center leading-[35px] lg:w-3/4'>Create A Detailed Tutorial in Less than 3 clicks</h3>
-                <button className='flex gap-2 bg-[#18181C] font-bold py-3 px-6 rounded-lg  items-center justify-center'>
+                <button className='flex gap-2 bg-[#18181C] font-bold py-3 px-6 rounded-lg  items-center justify-center button-shadow'>
                       <Image src={chrome} height={19} width={19} alt="logo" />
                       <span className='text-white mulish-font text-sm'>Install Wizardshot</span>
                 </button>

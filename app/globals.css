@@ -31,6 +31,16 @@
         #9fface 100%
       );
     }
+
+    .button-shadow {
+      box-shadow: 0px 4px 6px rgba(240, 251, 185, 0.2), 
+                  0px 6px 15px rgba(251, 179, 160, 0.3), 
+                  0px 9px 24px rgba(191, 162, 253, 0.4), 
+                  0px 12px 32px rgba(164, 208, 252, 0.5), 
+                  0px 15px 40px rgba(159, 233, 226, 0.5), 
+                  0px 18px 48px rgba(159, 250, 206, 0.6);
+    }
+    
     .max-container {
       @apply mx-auto max-w-[1440px];
     }
