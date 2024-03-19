@@ -4,6 +4,7 @@ import { featuresData } from '@/dataMock/data'
 import humanIcon from '../public/images/btn.png'
 import Image from 'next/image'
 import chrome from '../public/chrome.png'
+import { FaStar } from "react-icons/fa";
 
 const Features = () => {
   return (
@@ -32,10 +33,15 @@ const Features = () => {
               <Image src={chrome} height={19} width={19} alt="logo" />
               <span className='text-white mulish-font text-sm'>Install Wizardshot</span>
               </button>
-              <p className='flex flex-col items-center gap-1'>
+              <div className='flex flex-col items-center gap-1'>
                 <blockquote className='jakarta-font text-[14px] text-center leading-[16px]'>Has helped us write help docs 100x faster</blockquote>
                 <span className='jakarta-font-400 text-[14px] text-center leading-[16px]'>– Dany River, Cartier Informatie</span>
-              </p>
+              </div>
+              <div className='flex  items-center justify-center'>
+                {[...Array(5)].map((_, index) => (
+                  <FaStar key={index} className='text-[#FFD700] text-2xl' />
+                  ))}
+              </div>
         </div>
 
     </div>
