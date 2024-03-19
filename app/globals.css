@@ -74,6 +74,12 @@
       font-weight: 500;
     }
 
+    .mulish-font-600 {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 600;
+    }
+    
+
     .mulish-font-400 {
       font-family: 'Mulish', sans-serif;
       font-weight: 400;
