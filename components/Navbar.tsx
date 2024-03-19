@@ -24,8 +24,8 @@ const Navbar = () => {
                 <Link href={link.href} key={link.key} className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>{link.label}</Link>
             ))}
         </ul>
-        <div className='flex gap-3.5 items-center'>
-          <Link href='/'>Login</Link>
+        <div className='flex gap-3.5 items-start'>
+          <Link href='/' className='text-[#00000099] text-base font-bold opensans-font-regular '>Login</Link>
           <div className='flex relative'>
             <p
               className='text-[#090337] text-base script-font w-full  absolute -top-10 right-0 font-bold py-3 px-6 rounded-lg cursor-pointer'
