@@ -13,7 +13,7 @@ export const processData = [
     },
     {   
         'step': 3,
-        'title': '✅ Done. Article Writtenre',
+        'title': '✅  Done. Article Written',
         'description': 'Wizardshot carefully crafts the perfect article based off your actions recorded. Just click “Done” and we’ll write up the article in a second.',
         'image': '/images/img-1.png'
     },
