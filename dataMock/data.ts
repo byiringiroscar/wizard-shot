@@ -17,4 +17,23 @@ export const processData = [
         'description': 'Wizardshot carefully crafts the perfect article based off your actions recorded. Just click “Done” and we’ll write up the article in a second.',
         'image': '/images/img-3.png'
     },
+];
+
+
+export const featuresData = [
+    {
+        title: "FREE",
+        child1: "Free",
+        child2: "Forever",
+      },
+      {
+        title: "Unlimited",
+        child1: "Tutorial",
+        child2: "Creation",
+      },
+      {
+        title: "Powerful",
+        child1: "Editor &",
+        child2: "Integrations",
+      },
 ]

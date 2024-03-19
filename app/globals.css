@@ -18,9 +18,9 @@
       border: 10px solid;
       background: linear-gradient(180deg, #ab96f8 0%, #ff99d0 100%);
       border-radius: 10px;
-    }
+    } */
   
-    .bg-free-gradient {
+    .bg-feature-gradient {
       background: linear-gradient(
         90deg,
         #f0fbb9 0%,
@@ -30,7 +30,7 @@
         #9fe9e2 87.59%,
         #9fface 100%
       );
-    } */
+    }
     .max-container {
       @apply mx-auto max-w-[1440px];
     }
@@ -52,6 +52,11 @@
     .jakarta-font {
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 800;
+    }
+
+    .jakarta-font-500 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
     }
 
     .jakarta-font-700 {

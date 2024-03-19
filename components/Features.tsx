@@ -1,4 +1,6 @@
 import React from 'react'
+import FeatureCard from './FeatureCard'
+import { featuresData } from '@/dataMock/data'
 
 const Features = () => {
   return (
@@ -8,8 +10,16 @@ const Features = () => {
             <span className='text-[18px] leading-[25px]'>INCLUDING A KB INTEGRATION</span>
         </h3>
 
-        <div>
-            
+        <div className='flex gap-1 items-center justify-between mt-12 bg-feature-gradient'>
+              {featuresData.map((feature, index) => (
+                <FeatureCard
+                key={index}
+                title={feature.title}
+                child1={feature.child1}
+                child2={feature.child2}
+                />
+              ))}
+
         </div>
 
     </div>
