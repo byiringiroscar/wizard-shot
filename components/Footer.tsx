@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="mx-auto max-w-5xl flex flex-col justify-between gap-5 py-3 mt-12 rounded-lg relative w-full">
+    <footer className="mx-auto max-w-5xl flex flex-col items-center justify-between gap-7 py-3 mt-12 rounded-lg relative w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  justify-between w-full h-full">
               <div className="flex flex-col gap-2 items-start">
                 <ImageUse
@@ -26,7 +26,7 @@ const Footer = () => {
                   width={200}
                   height={200}
                   alt="juice"
-                  className="h-[100px] w-auto"
+                  className="h-[100px] w-auto mt-3"
                 />
               </div>
               <div className="flex flex-col items-start gap-5">
@@ -71,7 +71,7 @@ const Footer = () => {
               </div>
               </div>
         </div>
-        
+        <p className='mulish-font-500 text-[16px] leading-[20px] text-[#0D0D0D]'>© 2024 Wizardshot – All rights reserved.</p>
       </footer>
   )
 }
