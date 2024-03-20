@@ -8,7 +8,7 @@ import chrome from '../public/chrome.png'
 
 const MobileNav = () => {
   return (
-    <div className='h-screen w-full fixed top-0 gap-5 right-0 bg-white z-50 flex flex-col items-center p-8'>
+    <div className='h-screen w-full fixed top-0 gap-5 right-0 bg-white z-50 flex flex-col lg:hidden items-center p-8'>
         <div className='flex justify-between w-full'>
             <Link href='/'>
                 <ImageUse
