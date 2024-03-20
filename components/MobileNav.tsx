@@ -21,6 +21,12 @@ const MobileNav = () => {
             <IoClose className='text-3xl text-[#00000099] cursor-pointer' />
         </div>
         <hr className='w-full text-[#E6E6E6] text-[1px]' />
+        <ul className='flex flex-col gap-5 items-center'>
+            <li className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>Features</li>
+            <li className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>Pricing</li>
+            <li className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>Contact</li>
+            <li className='text-[#00000099] text-base font-bold opensans-font-regular transition-all px-2 py-0.5 cursor-pointer rounded'>Login</li>
+        </ul>
     </div>
   )
 }
