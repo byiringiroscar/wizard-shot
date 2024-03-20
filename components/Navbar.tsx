@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../public/logo.png'
@@ -14,6 +14,17 @@ const Navbar = () => {
   const handleToggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setIsMobileNavOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
+
   return (
     <nav className='flex justify-between padding-container items-center  pt-12 absolute inset-x-0 top-0 z-50'>
         <Link href='/'>
