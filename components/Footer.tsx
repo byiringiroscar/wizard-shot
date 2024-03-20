@@ -4,6 +4,7 @@ import logo from '../public/logo.png'
 import tiki from '../public/images/tiki.png'
 import insta from '../public/images/insta.png'
 import juice from '../public/images/juice.png'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -44,16 +45,33 @@ const Footer = () => {
                     <li className='mulish-font-600 text-[18px] leading-[23px] text-[#0D0D0D] cursor-pointer'>Status Page</li>
                   </ul>
               </div>
-              <div className="flex flex-col items-start gap-5">
-                  <p className="mulish-font text-[#0D0D0D] text-[22px] leading-[28px]">Learn More</p>
-                  <ul>
-                    <li className='mulish-font-600 text-[18px] leading-[23px] text-[#0D0D0D]'>Wizardshot</li>
-                    <li className='mulish-font-600 text-[18px] leading-[23px] text-[#0D0D0D]'>Community Page</li>
-                    <li className='mulish-font-600 text-[18px] leading-[23px] text-[#0D0D0D]'>Help Center</li>
-                    <li className='mulish-font-600 text-[18px] leading-[23px] text-[#0D0D0D]'>Security Information</li>
-                  </ul>
+              <div className="flex flex-col items-end gap-1">
+                  <p className="mulish-font-500 text-[#0D0D0D] text-[14px] leading-[19px]">📞 +1 (833) 387 3877</p>
+                  <p className="mulish-font-500 text-[#0D0D0D] text-[14px] leading-[19px]">✉️ success@wizardshot.com</p>
+                  <div className="flex gap-2">
+                    <ImageUse
+                      src={tiki}
+                      width={30}
+                      height={30}
+                      alt="tiki"
+                      className="h-[30px] w-auto"
+                    />
+                    <ImageUse
+                      src={insta}
+                      width={30}
+                      height={30}
+                      alt="insta"
+                      className="h-[30px] w-auto"
+                    />
+
+                  </div> 
+                  <div className='flex w-full justify-between gap-1 mt-3'>
+                    <Link href='/' className='mulish-font text-[22px] leading-[28px] text-[#0D0D0D]'>Sign Up</Link>
+                    <Link href='/' className='mulish-font text-[22px] leading-[28px] text-[#0D0D0D]'>Log in</Link>
+              </div>
               </div>
         </div>
+        
       </footer>
   )
 }
