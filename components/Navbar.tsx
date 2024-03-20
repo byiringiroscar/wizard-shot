@@ -32,9 +32,9 @@ const Navbar = () => {
               src={logo}
               width={140}
               priority
-              height={24.81}
+              height={50}
               alt="logo"
-              className="h-[18px] w-auto"
+              className="h-[28px] w-auto"
             />
         </Link>
         <ul className='hidden h-full sm:gap-5 gap-10 lg:flex'>
