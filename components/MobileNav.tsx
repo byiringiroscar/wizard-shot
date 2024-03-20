@@ -31,7 +31,7 @@ const MobileNav = () => {
             <li className='opensans-font-regular text-[16px] leading-[21px] text-black opacity-60'><Link href='/'>Login</Link></li>
         </ul>
         <hr className='w-full text-[#E6E6E6] text-[1px]' />
-        <div className='flex flex-col w-full gap-2 items-center'>
+        <div className='flex flex-col w-full gap-2 items-center mt-3'>
             <button className='flex gap-1 bg-[#18181C] font-bold py-3 px-6 rounded-lg  items-center'>
                 <Image src={chrome} height={19} width={19} alt="logo" />
                 <span className='text-white mulish-font text-sm'>Install Wizardshot</span>
