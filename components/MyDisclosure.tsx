@@ -2,13 +2,18 @@
 import { Disclosure } from '@headlessui/react';
 import { FaChevronUp } from "react-icons/fa";
 
-const MyDisclosure = () => {
+type questionType = {
+  question: string;
+  answer: string;
+};
+
+const MyDisclosure = ({question, answer}: questionType) => {
   return (
     <Disclosure>
           {({ open }) => (
             <>
               <Disclosure.Button className="flex w-full justify-between  px-4 py-2 text-left text-sm font-medium focus:outline-none focus-visible:ring">
-                <span>What is your refund policy?</span>
+                <span className='text-[16px] leading-[24px] text-[#0F172A]'>{question}</span>
                 <FaChevronUp
                   className={`${
                     open ? 'rotate-180 transform' : ''
@@ -16,8 +21,7 @@ const MyDisclosure = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
-                If youre unhappy with your purchase for any reason, email us
-                within 90 days and well refund you in full, no questions asked.
+                {answer}
               </Disclosure.Panel>
               <hr />
             </>
