@@ -8,7 +8,7 @@ import { FaStar } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <div className='main-container flex flex-col gap-4 items-center'>
+    <div className='main-container flex flex-col gap-4 items-center' id='features'>
         <h3 className='jakarta-font-700 text-center relative'>
             <span className='underline text-[28px] leading-[39px]'>32 MORE FEATURES</span><br />
             <span className='text-[18px] leading-[25px]'>INCLUDING A KB INTEGRATION</span>
