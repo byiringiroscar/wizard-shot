@@ -6,9 +6,14 @@ import { IoClose } from "react-icons/io5";
 import Image from 'next/image'
 import chrome from '../public/chrome.png'
 
-const MobileNav = () => {
+type ToggleType = {
+    isMobileNavOpen?: boolean;
+    onToggleNav?: any;
+  };
+
+const MobileNav = ({ isMobileNavOpen, onToggleNav }: ToggleType) => {
   return (
-    <div className='h-screen w-full fixed top-0 gap-5 right-0 bg-white z-50 flex flex-col lg:hidden items-center p-8'>
+    <div className={`h-screen w-full fixed gap-5 bg-white z-50 flex flex-col lg:hidden items-center p-8 transition-all duration-[1s] ${isMobileNavOpen ? 'right-0' : '-right-full'} top-0`}>
         <div className='flex justify-between w-full'>
             <Link href='/'>
                 <ImageUse
@@ -20,7 +25,7 @@ const MobileNav = () => {
                 className="h-[18px] w-auto"
                 />
             </Link>
-            <IoClose className='text-3xl text-[#00000099] cursor-pointer' />
+            <IoClose onClick={onToggleNav} className='text-3xl text-[#00000099] cursor-pointer' />
         </div>
         <hr className='w-full text-[#E6E6E6] text-[1px]' />
         <ul className='flex flex-col gap-9 items-start w-full'>

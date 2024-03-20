@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../public/logo.png'
@@ -6,8 +7,13 @@ import chrome from '../public/chrome.png'
 import { NAV_LINKS } from '@/constants' 
 import ImageUse from './Image'
 import { FiAlignJustify } from "react-icons/fi";
+import MobileNav from './MobileNav'
 
 const Navbar = () => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const handleToggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
   return (
     <nav className='flex justify-between padding-container items-center  pt-12 absolute inset-x-0 top-0 z-50'>
         <Link href='/'>
@@ -38,8 +44,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className='lg:hidden'>
-          <FiAlignJustify className='text-3xl text-[#00000099]' />
+          <FiAlignJustify onClick={handleToggleMobileNav} className='text-3xl text-[#00000099] cursor-pointer' />
         </div>
+        <MobileNav isMobileNavOpen={isMobileNavOpen} onToggleNav={handleToggleMobileNav} />
     </nav>
   )
 }
