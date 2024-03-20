@@ -18,7 +18,7 @@ const Footer = () => {
               alt="logo"
               className="h-[43px] w-auto"
             />
-            <p className="text-[18px] leading-[23px] mulish-font-600 text-[#0D0D0D]">Turn complex process into a simple step-by step Guide</p>
+            <p className="text-[18px] leading-[23px] mulish-font-600 text-[#0D0D0D]">Turn complex process into a <br /> simple step-by step Guide</p>
 
             <ImageUse
               src={juice}
