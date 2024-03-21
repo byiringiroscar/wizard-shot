@@ -10,7 +10,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
     <footer className="mx-auto max-w-5xl flex flex-col items-center justify-between gap-7 py-3 mt-12 rounded-lg relative w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  justify-between w-full h-full px-6 lg:px-20 lg:lg:px-5 3xl:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  justify-between w-full h-full px-6 lg:px-2 3xl:px-0">
               <div className="flex flex-col gap-2 items-start">
                 <ImageUse
                   src={logo}
