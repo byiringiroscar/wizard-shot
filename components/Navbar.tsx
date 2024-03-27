@@ -26,7 +26,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className='flex justify-between padding-container items-center  pt-12 absolute inset-x-0 top-0 z-50'>
+    <nav className='flex justify-between padding-container items-center  pt-12 absolute inset-x-0 top-0 z-50 xl:px-28'>
         <Link href='/'>
             <ImageUse
               src={logo}
